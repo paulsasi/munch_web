@@ -4,7 +4,7 @@ import Sidebar from './Sidebar';
 function App() {
   return (
     
-      <div class="background-container">
+      <div className="background-container">
         <Sidebar />
       </div>
     
