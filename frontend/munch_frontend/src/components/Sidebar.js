@@ -3,12 +3,14 @@ import { BiMenu } from 'react-icons/bi';
 import { AiOutlineClose} from 'react-icons/ai';
 import './Sidebar.css';
 import {Transition} from 'react-transition-group';
+import {Link} from 'react-router-dom';
+
 function Sidebar() {
 
     const SidebarData = [
         {
             title: 'INICIO',
-            path: '/'
+            path: '/home'
         },
         {
             title: 'SOBRE NOSOTROS',
@@ -16,17 +18,16 @@ function Sidebar() {
         }
     ];
 
+    /* Navigation bar state */
     const [navbar, setNavbar] = useState(false);
-
     const showNavbar = () => setNavbar(!navbar);
 
 
+    /* Transition configurations */
     const duration = 200;
-
     const defaultStyle = {
         transition: `width ${duration}ms ease-in-out`,
     }
-    
     const transitionStyles = {
         entering: { width: '100vh' },
         entered: { width: '100vh' },
@@ -36,7 +37,7 @@ function Sidebar() {
 
 
     return (
-            <Transition in={navbar} timeout={500}>
+            <Transition in={navbar} timeout={duration}>
                 {state => (
                     <div style={{...defaultStyle,...transitionStyles[state]}}>
                         <div className='wrapper'>
@@ -55,12 +56,12 @@ function Sidebar() {
                                                 {SidebarData.map((item, index) => {
                                                     return (
                                                         <li key={index} className='nav-text'>
-                                                            {item.title}
+                                                            <Link to={item.path}>{item.title}</Link>
                                                         </li>
                                                     )
                                                 })}
                                             </ul>
-                                        </div>
+                                        </div> 
                                     </div>
                                 </div>
                             }
