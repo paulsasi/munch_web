@@ -1,0 +1,45 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-gap: 1px;
+    grid-auto-rows: minmax(10px, auto);
+}
+
+.currentsite {
+    grid-column: 3;
+    grid-row: 2;
+    font-family: 'sans-serif';
+    color: gray;
+    font-size:0.8vw;
+}
+
+.header {
+    grid-column: 3 / 5;
+    grid-row: 3;
+}
+
+.shop-image-text {
+    grid-column: 4 / 10;
+    grid-row: 12 / 14;
+    background-color: green;
+}
+
+.shop-image-container {
+    grid-column: 11 / 19;
+    grid-row: 4 / 25;
+    background-image: url('../static/images/shop-image.jpg');
+    background-size:cover;
+    background-position: center center;
+}
+
+.location-container {
+    grid-column: 3 / 11;
+    grid-row: 27 / 60;
+    background-color: salmon;
+}
+
+.timetable {
+    grid-column: 12 / 19;
+    grid-row: 27 / 60;
+    background-color: purple;
+}
