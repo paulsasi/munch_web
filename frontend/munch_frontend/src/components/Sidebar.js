@@ -13,7 +13,23 @@ function Sidebar() {
             path: '/home'
         },
         {
-            title: 'SOBRE NOSOTROS',
+            title: 'NOVEDADES',
+            path: '/novelties'
+        },
+        {
+            title: 'PLAYA',
+            path: '/beach'
+        },
+        {
+            title: 'LENCERÍA',
+            path: '/lingerie'
+        },
+        {
+            title: 'ACCESORIOS',
+            path: '/accessories'
+        },
+        {
+            title: 'CONTACTO',
             path: '/about-us'
         }
     ];
@@ -56,7 +72,7 @@ function Sidebar() {
                                                 {SidebarData.map((item, index) => {
                                                     return (
                                                         <li key={index} className='nav-text'>
-                                                            <Link to={item.path}>{item.title}</Link>
+                                                            <Link className='link' to={item.path} style={{ textDecoration: 'none' }}>{item.title}</Link>
                                                         </li>
                                                     )
                                                 })}

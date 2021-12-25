@@ -1,0 +1,19 @@
+.novelties-wrapper {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-gap: 1px;
+    grid-auto-rows: minmax(10px, auto);
+}
+
+.novelties-currentsite {
+    grid-column: 3 / 5;
+    grid-row: 2;
+    font-family: 'sans-serif';
+    color: gray;
+    font-size:0.8vw;
+}
+
+.novelties-header {
+    grid-column: 3 / 5;
+    grid-row: 3;
+}

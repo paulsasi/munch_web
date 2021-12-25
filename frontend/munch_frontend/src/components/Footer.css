@@ -1,0 +1,14 @@
+.footer {
+    height: 100%;
+    width: 100%;
+}
+
+.footer-white-space {
+    background-color: white;
+    height: 15%;
+}
+
+.footer-content {
+    background-color: rgb(71, 70, 70);
+    height: 85%;
+}

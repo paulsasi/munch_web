@@ -18,6 +18,13 @@
     background-color: #454546;
 }
 
+.link {
+    color: black;
+}
+.link:hover{
+    color: white;
+}
+
 .nav-menu {
     grid-column: 1 / 20;
     grid-row: 2 / 20;
