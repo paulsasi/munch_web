@@ -37,7 +37,7 @@ function AboutUs() {
                     <li className='text'> <AiFillPhone size={10} /> 943 273 829</li>
                 </div>
                 <div className='location-container'>
-                    <iframe className='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.827179393135!2d-1.9834213841699833!3d43.31787708206623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51a5fdfd56ecd1%3A0xebd1eae11be9f1ca!2sMUNCH%20LENCER%C3%8DA!5e0!3m2!1ses!2ses!4v1640439226025!5m2!1ses!2ses" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe className='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.827179393135!2d-1.9834213841699833!3d43.31787708206623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51a5fdfd56ecd1%3A0xebd1eae11be9f1ca!2sMUNCH%20LENCER%C3%8DA!5e0!3m2!1ses!2ses!4v1640439226025!5m2!1ses!2ses" allowFullScreen="" loading="lazy"></iframe>
                 </div>
                 <div className='footer-container'>
                     
