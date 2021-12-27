@@ -17,3 +17,9 @@
     grid-column: 3 / 5;
     grid-row: 3;
 }
+
+.inventory-container {
+    grid-column: 3 / 19;
+    grid-row: 5 / 8;
+    background-color: chartreuse;
+}
