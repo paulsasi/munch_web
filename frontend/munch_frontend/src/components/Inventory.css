@@ -1,0 +1,10 @@
+.inventory-wrapper {
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(50px, auto);
+}
+
+.inventory-item-box {
+    background-color: rebeccapurple;
+}
