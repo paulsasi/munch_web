@@ -1,41 +1,42 @@
 import Header from "./Header";
 import './Inventory.css';
-import getInventory from "../api/getInventory";
+import ItemInventory from "./ItemInventory";
+import fetchInventory from "../api/fetchInventory";
+import fetchImage from "../api/fetchImage";
 import config from "../api/config";
 import React, {useState, useEffect} from "react";
 
 
 function Inventory(args) {
 
-    const [inv, setInv] = useState([]);
-    const updateInv = (value) => setInv(value);
+    const [inventory, setInventory] = useState([]);
 
     const ITEMS_PER_LINE = 3;
 
-
     useEffect(() => {
-        const fetchInventory = async () => {
-            const inv = await getInventory();
-            setInv(inv);
+        const getInventory = async () => {
+            const inv = await fetchInventory();
+
+            setInventory(inv);
         }
 
-        fetchInventory();
+        getInventory();
+
     }, [])
 
-    const renderInventory = inv.map((item, index) => {
+
+    const renderInventory = inventory.map((item, index) => {
 
         const row = Math.floor(index / ITEMS_PER_LINE);
-        const col = index % ITEMS_PER_LINE;
+        const formatted_row = `${1 + 5*row} / ${6 + 5*row}`;
 
-        /* const col = `${2 * 10}`; */
-        const formatted_row = `${1 + 6*row} / ${6 + 6*row}`;
+        const col = index % ITEMS_PER_LINE;
         const formatted_col = `${1 + 7*col} / ${8 + 7*col}`;
 
-        console.log({formatted_row});
-        console.log({formatted_col});
-        console.log('########################');
         return (
-            <div className='inventory-item-box' style={{gridColumn: formatted_col, gridRow: formatted_row}}> {item.name} </div>
+            <div className='inventory-item-box' style={{gridColumn: formatted_col, gridRow: formatted_row}}>
+                <ItemInventory item={item}/>
+            </div>
         )
     })
     return (
