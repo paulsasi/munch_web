@@ -21,5 +21,10 @@
 .inventory-container {
     grid-column: 3 / 19;
     grid-row: 5 / 8;
-    background-color: gray;
+}
+
+.beach-footer-container {
+    grid-column: 1 / 21;
+    grid-row: 8 / 18;
+
 }

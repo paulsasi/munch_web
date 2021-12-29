@@ -4,7 +4,3 @@
     grid-gap: 40px;
     grid-auto-rows: minmax(0px, auto);
 }
-
-.inventory-item-box {
-    background-color: rebeccapurple;
-}
