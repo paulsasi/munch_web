@@ -1,12 +1,11 @@
 import fetchImage from "../api/fetchImage";
+import './ItemInventory.css';
 import Header from "./Header";
 import React, {useState, useEffect} from "react";
 
 function ItemInventory(props) {
 
     const item = props.item;
-
-    console.log(item.images[0]);
 
     const [imageb64, setImageb64] = useState('');
 
@@ -22,9 +21,11 @@ function ItemInventory(props) {
     }, [])
 
     return (
-        <div>
-            <img src={imageb64}></img>
-            
+        <div className='item-box-wrapper'>
+            <div className='image-container'>
+                <img className='item-image'src={imageb64}></img>
+            </div>
+            <div className='image-info'>hola</div>
         </div>
     );
 }

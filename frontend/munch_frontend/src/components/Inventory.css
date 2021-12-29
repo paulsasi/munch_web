@@ -1,8 +1,8 @@
 .inventory-wrapper {
     display: grid;
     grid-template-columns: repeat(21, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 40px;
+    grid-auto-rows: minmax(0px, auto);
 }
 
 .inventory-item-box {

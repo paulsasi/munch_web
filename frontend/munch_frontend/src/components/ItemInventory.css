@@ -1,0 +1,24 @@
+.item-box-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0px;
+    grid-auto-rows: minmax(20px, auto);
+
+    background-color: seagreen;
+}
+.image-container {
+    grid-column: 1 / 6;
+    grid-row: 1 / 19;
+}
+
+.item-image {
+
+    height: 100%;
+    width: 100%;
+}
+
+.image-info {
+    grid-column: 1 / 6;
+    grid-row: 19 / 21;
+    background-color: red;
+}
