@@ -32,12 +32,7 @@ function Inventory(args) {
 
         const col = index % ITEMS_PER_LINE;
         const formatted_col = `${1 + 7*col} / ${8 + 7*col}`;
-
-        console.log('########');
-        console.log(index);
-        console.log(formatted_col);
-        console.log(formatted_row);
-
+        
         return (
             <div className='inventory-item-box' style={{gridColumn: formatted_col, gridRow: formatted_row}}>
                 <ItemInventory item={item}/>

@@ -8,7 +8,15 @@ function ItemInventory(props) {
 
     const item = props.item;
 
+
     const [imageb64, setImageb64] = useState('');
+
+    const [colorDisplay, setColorDisplay] = useState({display: 'none'});
+    const invColorDisplay = () => setColorDisplay({display: 'none'});
+    const blockColorDisplay = () => setColorDisplay({display: 'block'});
+
+    const [colorName, setColorName] = useState('');
+
 
     useEffect(() => {
         const getImage = async (img) => {
@@ -21,12 +29,18 @@ function ItemInventory(props) {
 
     }, [])
 
-    var h = 20;
+    const renderColors = item.color.map((color) => {
+        const name = (color != undefined) ? color[0] : undefined;
+        const r = (color != undefined) ? color[1] : undefined;
+        const g = (color != undefined) ? color[2] : undefined;
+        const b = (color != undefined) ? color[3] : undefined;
 
-    const f = () => {
-        console.log('aaaaa');
-        h = 10;
-    }
+
+        return (
+            <BsCircleFill className='image-color-circles' color={'red'}
+            onMouseEnter={() => {blockColorDisplay(); setColorName(name);}} onMouseLeave={() => {invColorDisplay(); setColorName('');}} />
+        )
+    })
 
     return (
         <div className='item-box-wrapper'>
@@ -35,7 +49,14 @@ function ItemInventory(props) {
             </div>
             <div className='image-name'>{item.name}</div>
             <div className='image-price'>{item.price}€</div>
-            <BsCircleFill className='image-colors' color={'red'} onMouseEnter={f}> </BsCircleFill>{h}
+
+            <div className='image-color-container'>
+                {renderColors}
+                <div className='image-color-name'>{colorName}</div>
+            </div>
+            
+            {/* <div className='image-color-names-placeholder'></div>
+            <div className='image-color-names' style={colorDisplay}>hola</div> */}
         </div>
     );
 }
