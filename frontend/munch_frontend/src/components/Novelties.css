@@ -17,3 +17,9 @@
     grid-column: 3 / 5;
     grid-row: 3;
 }
+
+.novelties-footer-container {
+    grid-column: 1 / 21;
+    grid-row: 8 / 18;
+
+}

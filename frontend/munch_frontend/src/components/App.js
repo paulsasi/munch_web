@@ -5,7 +5,12 @@ function App() {
   return (
     
       <div className="background-container">
-        <Sidebar />
+        <div className='sidebar-container'>
+          <Sidebar  className="sidebar"/>
+        </div>
+        <div className='logo-container'>
+          <div className='logo-image'/>
+        </div>
       </div>
     
   );

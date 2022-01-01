@@ -47,7 +47,7 @@
 
 .image-color-name {
     grid-column: 1;
-    grid-row: 21;
+    grid-row: 21/ 24;
 
     font-family: 'sans-serif';
     color: gray;
@@ -58,5 +58,5 @@
 
 .image-color-container {
     grid-column: 1;
-    grid-row: 20 / 23;
+    grid-row: 20 / 24;
 }

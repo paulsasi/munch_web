@@ -15,7 +15,7 @@ function ItemInventory(props) {
     const invColorDisplay = () => setColorDisplay({display: 'none'});
     const blockColorDisplay = () => setColorDisplay({display: 'block'});
 
-    const [colorName, setColorName] = useState('');
+    const [colorName, setColorName] = useState(' ');
 
 
     useEffect(() => {
@@ -35,10 +35,13 @@ function ItemInventory(props) {
         const g = (color != undefined) ? color[2] : undefined;
         const b = (color != undefined) ? color[3] : undefined;
 
+        const icon_style = {
+            color: 'rgb(' + r + ',' + g +',' + b + ')'
+        };
 
         return (
-            <BsCircleFill className='image-color-circles' color={'red'}
-            onMouseEnter={() => {blockColorDisplay(); setColorName(name);}} onMouseLeave={() => {invColorDisplay(); setColorName('');}} />
+            <BsCircleFill className='image-color-circles' style={icon_style}
+            onMouseEnter={() => {blockColorDisplay(); setColorName(name);}} onMouseLeave={() => {invColorDisplay(); setColorName(' ');}} />
         )
     })
 

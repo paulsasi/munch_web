@@ -17,3 +17,9 @@
     grid-column: 3 / 5;
     grid-row: 3;
 }
+
+.lingerie-footer-container {
+    grid-column: 1 / 21;
+    grid-row: 8 / 18;
+
+}

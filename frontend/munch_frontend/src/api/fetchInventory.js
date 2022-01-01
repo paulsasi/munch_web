@@ -1,11 +1,21 @@
 import config from "./config";
 
 
-const fetchInventory = async (args) => {
+const fetchInventory = async (props) => {
 
     try {
 
-        const response = await fetch(config.URL + config.INVENTORY_ENDPOINT, {
+        const args = props.args;
+
+        /* Construct the URL */
+        var query = '?';
+        for (var key in args) {
+            query += key + '=' + args[key] +'&'
+        }
+        const url = config.URL + config.INVENTORY_ENDPOINT + query;
+
+        /* Fetch data */
+        const response = await fetch(url, {
             headers: {
                 'Content-type': 'application/json'
             }

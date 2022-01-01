@@ -6,10 +6,19 @@
     grid-auto-rows: minmax(20px, auto);
 }
 
-.logo {
+.logo-box {
     grid-column: 1 / 4;
     grid-row: 1 / 4;
-    background-color: red;
+}
+
+.logo {
+    
+    width: 100%;
+    height: 100%;
+    box-sizing:border-box;
+    background-image: url('../static/images/logo.png');
+    background-size:cover;
+    background-position: center center;
 }
 
 .link {
@@ -81,6 +90,17 @@
     grid-auto-rows: minmax(10px, auto);
 }
 
+.item1-image {
+    grid-column: 3 / 6;
+    grid-row: 2 / 20;
+    background-color: tomato;
+
+    box-sizing:border-box;
+    background-image: url('../static/images/item-novedades.png');
+    background-size:cover;
+    background-position: center center;
+}
+
 .item1-field1 {
     grid-column: 1;
     grid-row: 2;
@@ -100,6 +120,16 @@
     font-size:0.8vw;
 }
 
+.item2-image {
+    grid-column: 3 / 6;
+    grid-row: 2 / 20;
+    background-color: tomato;
+
+    box-sizing:border-box;
+    background-image: url('../static/images/item-beach.png');
+    background-size:cover;
+    background-position: center center;
+}
 
 .item2-field1 {
     grid-column: 1;
@@ -118,6 +148,17 @@
     grid-row: 4;
     font-family: 'sans-serif';
     font-size:0.8vw;
+}
+
+.item3-image {
+    grid-column: 3 / 6;
+    grid-row: 2 / 20;
+    background-color: tomato;
+
+    box-sizing:border-box;
+    background-image: url('../static/images/item-lingerie.png');
+    background-size:cover;
+    background-position: center center;
 }
 
 .item3-field1 {

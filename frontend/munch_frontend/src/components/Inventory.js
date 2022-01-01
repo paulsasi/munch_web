@@ -14,13 +14,13 @@ function Inventory(args) {
     const ITEMS_PER_LINE = 3;
 
     useEffect(() => {
-        const getInventory = async () => {
-            const inv = await fetchInventory();
+        const getInventory = async (args) => {
+            const inv = await fetchInventory(args);
 
             setInventory(inv);
         }
 
-        getInventory();
+        getInventory(args);
 
     }, [])
 
