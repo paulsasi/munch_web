@@ -57,9 +57,7 @@ function ItemInventory(props) {
                 {renderColors}
                 <div className='image-color-name'>{colorName}</div>
             </div>
-            
-            {/* <div className='image-color-names-placeholder'></div>
-            <div className='image-color-names' style={colorDisplay}>hola</div> */}
+
         </div>
     );
 }

@@ -49,26 +49,43 @@ function Header() {
                         <div className='logo'/>
                     </Link>
                 </div>
-                <div className='header-item-menu'>
 
+                <div className='line'></div>
+
+                <div className='header-item-menu'>
+            
                     <div className='item1' onMouseEnter={blockItem1StyleExlucive}>
-                        <Link to='/novelties' className='header-link' style={{ textDecoration: 'none' }}>NOVEDADES</Link>
+                        <Link to='/novelties' className='header-link' style={{ textDecoration: 'none' }}>
+                            <div className='item-name-style'>
+                                NOVEDADES
+                            </div>
+                        </Link>
                     </div>
 
                     <div className='item2' onMouseEnter={blockItem2StyleExclusive}>
-                        <Link to='/beach' className='header-link' style={{ textDecoration: 'none' }}>PLAYA</Link>
+                        <Link to='/beach' className='header-link' style={{ textDecoration: 'none' }}>
+                            <div className='item-name-style'>PLAYA</div>
+                        </Link>
                     </div>
 
                     <div className='item3' onMouseEnter={blockItem3StyleExclusive}>
-                        <Link to='/lingerie' className='header-link' style={{ textDecoration: 'none' }}>LENCERÍA</Link>
+                        <Link to='/lingerie' className='header-link' style={{ textDecoration: 'none' }}>
+                            <div className='item-name-style'>LENCERÍA</div>
+                        </Link>
                     </div>
                     <div className='item4' onMouseEnter={invItemAll}>
-                        <Link to='/accessories' className='header-link' style={{ textDecoration: 'none' }}>ACCESORIOS</Link>
+                        <Link to='/accessories' className='header-link' style={{ textDecoration: 'none' }}>
+                            <div className='item-name-style'>ACCESORIOS</div>
+                        </Link>
                     </div>
                     <div className='item5' onMouseEnter={invItemAll}>
-                        <Link to='/about-us' className='header-link' style={{ textDecoration: 'none' }}>CONTACTO</Link>
+                        <Link to='/about-us' className='header-link' style={{ textDecoration: 'none' }}>
+                            <div className='item-name-style'>CONTACTO</div>
+                        </Link>
                     </div>
                 </div>
+
+                
             </div>
 
             <div style={item1Style} onMouseLeave={() => {invItem1Style();}}>

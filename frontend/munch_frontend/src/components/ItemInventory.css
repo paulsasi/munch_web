@@ -2,18 +2,20 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 0px;
-    grid-auto-rows: minmax(10px, auto);
+    grid-auto-rows: minmax(15px, auto);
 }
 
 .image-container {
     grid-column: 1 / 6;
     grid-row: 1 / 19;
+    background-color: blue;
 }
 
 .item-image {
 
     height: 100%;
     width: 100%;
+    object-fit: fill;
 }
 
 .image-name {

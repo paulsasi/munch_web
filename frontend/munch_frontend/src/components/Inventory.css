@@ -1,6 +1,6 @@
 .inventory-wrapper {
     display: grid;
     grid-template-columns: repeat(21, 1fr);
-    grid-gap: 40px;
+    grid-gap: 10px;
     grid-auto-rows: minmax(0px, auto);
 }
