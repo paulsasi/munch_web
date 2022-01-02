@@ -34,6 +34,12 @@ function Header() {
         invItem2Style();
     }
 
+    const invItemAll = () => {
+        invItem1Style();
+        invItem2Style();
+        invItem3Style();
+    }
+
     return (
         <div>
             <div className='header-wrapper'>
@@ -46,21 +52,21 @@ function Header() {
                 <div className='header-item-menu'>
 
                     <div className='item1' onMouseEnter={blockItem1StyleExlucive}>
-                        <Link to='/novelties' className='link' style={{ textDecoration: 'none' }}>NOVEDADES</Link>
+                        <Link to='/novelties' className='header-link' style={{ textDecoration: 'none' }}>NOVEDADES</Link>
                     </div>
 
                     <div className='item2' onMouseEnter={blockItem2StyleExclusive}>
-                        <Link to='/beach' className='link' style={{ textDecoration: 'none' }}>PLAYA</Link>
+                        <Link to='/beach' className='header-link' style={{ textDecoration: 'none' }}>PLAYA</Link>
                     </div>
 
                     <div className='item3' onMouseEnter={blockItem3StyleExclusive}>
-                        <Link to='/lingerie' className='link' style={{ textDecoration: 'none' }}>LENCERÍA</Link>
+                        <Link to='/lingerie' className='header-link' style={{ textDecoration: 'none' }}>LENCERÍA</Link>
                     </div>
-                    <div className='item4'>
-                        <Link to='/accessories' className='link' style={{ textDecoration: 'none' }}>ACCESORIOS</Link>
+                    <div className='item4' onMouseEnter={invItemAll}>
+                        <Link to='/accessories' className='header-link' style={{ textDecoration: 'none' }}>ACCESORIOS</Link>
                     </div>
-                    <div className='item5'>
-                        <Link to='/about-us' className='link' style={{ textDecoration: 'none' }}>CONTACTO</Link>
+                    <div className='item5' onMouseEnter={invItemAll}>
+                        <Link to='/about-us' className='header-link' style={{ textDecoration: 'none' }}>CONTACTO</Link>
                     </div>
                 </div>
             </div>
@@ -69,9 +75,9 @@ function Header() {
                 <div className='item-container'>
                     <div className='item-box'>
                         <div className='item1-image'/>
-                        <div className='item1-field1'>Novedades</div>
-                        <div className='item1-field2'>aaaaaa</div>
-                        <div className='item1-field3'>bbbbb</div>
+                        <div className='item1-field1'>&nbsp; Novedades</div>
+                        <div className='item1-field2'>&nbsp; aaaaaa</div>
+                        <div className='item1-field3'>&nbsp; bbbbb</div>
                     </div>
                 </div>
             </div>
@@ -80,9 +86,10 @@ function Header() {
                 <div className='item-container'>
                     <div className='item-box'>
                         <div className='item2-image'/>
-                        <div className='item2-field1'>Bañadores</div>
-                        <div className='item2-field2'>aaaaaa</div>
-                        <div className='item2-field3'>cccc</div>
+                        <div className='item2-field1'>&nbsp; Bañadores</div>
+                        <div className='item2-field2'>&nbsp; Bikinis</div>
+                        <div className='item2-field3'>&nbsp; Bragas</div>
+                        <div className='item2-field4'>&nbsp; Conjuntos</div>
                     </div>
                 </div>
             </div>
@@ -91,9 +98,10 @@ function Header() {
                 <div className='item-container'>
                     <div className='item-box'>
                         <div className='item3-image'/>
-                        <div className='item3-field1'>aaa</div>
-                        <div className='item3-field2'>sdasdsa</div>
-                        <div className='item3-field3'>dsadasdsa</div>
+                        <div className='item3-field1'>&nbsp; Sujetadores</div>
+                        <div className='item3-field2'>&nbsp; Bragas</div>
+                        <div className='item3-field3'>&nbsp; Bodys</div>
+                        <div className='item3-field4'>&nbsp; Homewear</div>
                     </div>
                 </div>
             </div>

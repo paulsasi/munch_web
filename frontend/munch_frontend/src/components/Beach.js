@@ -19,9 +19,6 @@ function Beach() {
                 </div>
             </div>
 
-            
-
-            
         </div>
     );
 }
