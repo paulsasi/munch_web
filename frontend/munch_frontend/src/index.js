@@ -8,7 +8,7 @@ import Beach from './components/Beach';
 import Lingerie from './components/Lingerie';
 import Accessories from './components/Accessories';
 import AboutUs from './components/AboutUs';
-import Test from './components/Test';
+import HomeTest from './pages/HomeTest';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -22,7 +22,7 @@ ReactDOM.render(
         <Route exact path='/lingerie' element={<Lingerie/>} />
         <Route exact path='/accessories' element={<Accessories/>} />
         <Route exact path='/about-us' element={<AboutUs/>} />
-        <Route exact path='/test' element={<Test/>} />
+        <Route exact path='/test' element={<HomeTest/>} />
         
       </Routes>
     </BrowserRouter>
