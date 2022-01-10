@@ -5,7 +5,7 @@ const SingleProduct = () => {
     return (
         <Container>
             <ImgContainer>
-                <Image src="https://i.picsum.photos/id/1025/4951/3301.jpg?hmac=_aGh5AtoOChip_iaMo8ZvvytfEojcgqbCH7dzaz-H8Y" />
+                <Image src={require("../static/images/image2.png")} />
             </ImgContainer>
             <InfoContainer>
                 <Title>HOLA</Title>

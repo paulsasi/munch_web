@@ -5,7 +5,7 @@ import Categories from "../components/Categories";
 import Newsletter from "../components/Newsletter";
 import FooterTest from "../components/FooterTest";
 
-function HomeTest() {
+function Home() {
     return (
     <div>
         <Announcement />
@@ -18,4 +18,4 @@ function HomeTest() {
     );
 }
 
-export default HomeTest;
+export default Home;
