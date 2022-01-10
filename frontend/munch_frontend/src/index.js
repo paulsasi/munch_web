@@ -11,21 +11,22 @@ import AccessoriesProducts from './pages/AccessoriesProducts';
 import NoveltiesProducts from './pages/NoveltiesProducts';
 import AboutUs from './pages/AbousUs.js';
 
+import ScrollToTop from './ScrollToTop';
+
 ReactDOM.render(
   <React.StrictMode>
-
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route exact path='/novelties' element={<NoveltiesProducts/>} />
-        <Route exact path='/beach' element={<BeachProducts/>} />
-        <Route exact path='/lingerie' element={<LingerieProducts/>} />
-        <Route exact path='/accessories' element={<AccessoriesProducts/>} />
-        <Route exact path='/about-us' element={<AboutUs/>} />
-
-        <Route exact path='/product' element={<Product />} />
-        
-      </Routes>
+      <ScrollToTop>
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route exact path='/novelties' element={<NoveltiesProducts/>} />
+          <Route exact path='/beach' element={<BeachProducts/>} />
+          <Route exact path='/lingerie' element={<LingerieProducts/>} />
+          <Route exact path='/accessories' element={<AccessoriesProducts/>} />
+          <Route exact path='/about-us' element={<AboutUs/>} />
+          <Route exact path='/product' element={<Product />} />
+        </Routes>
+      </ScrollToTop>
     </BrowserRouter>
 
   </React.StrictMode>,

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
     display: flex;
@@ -62,4 +63,10 @@ export const ContactItem = styled.div`
     align-items: center;
     color: white;
     font-size: 12px;
+`;
+
+
+export const ItemLink = styled(Link)`
+    color: white;
+    text-decoration: none;
 `;

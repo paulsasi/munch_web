@@ -1,6 +1,8 @@
-import {Container, Left, Center, Right, Logo, Description, Title, List, ListItem, ContactItem} from './footerTest-styling';
+import {Container, Left, Center, Right, Logo, Description, Title, List, ListItem, ContactItem, ItemLink} from './footerTest-styling';
 import {HiLocationMarker} from 'react-icons/hi';
 import {AiFillPhone, AiFillMail} from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+
 const FooterTest = () => {
     return (
         <Container>
@@ -22,7 +24,9 @@ const FooterTest = () => {
                     <ListItem>Woman Fashion</ListItem>
                     <ListItem>Accessories</ListItem>
                     <ListItem>My Account</ListItem>
-                    <ListItem>Order Tracking</ListItem>
+                    <ListItem>
+                        <ItemLink to="/about-us">Contacto</ItemLink>
+                    </ListItem>
                     <ListItem>Wishlist</ListItem>
                     <ListItem>Wishlist</ListItem>
                     <ListItem>Terms</ListItem>
