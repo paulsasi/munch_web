@@ -8,7 +8,6 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f5fbfd;
 
     -webkit-transform: scale(1);
 	transform: scale(1);

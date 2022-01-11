@@ -18,10 +18,18 @@ const FooterTest = () => {
             <Center>
                 <Title>Useful Links</Title>
                 <List>
-                <ListItem>Home</ListItem>
-                    <ListItem>Cart</ListItem>
-                    <ListItem>Man Fashion</ListItem>
-                    <ListItem>Woman Fashion</ListItem>
+                    <ListItem>
+                        <ItemLink to="/">Inicio</ItemLink>
+                    </ListItem>
+                    <ListItem>
+                        <ItemLink to="/beach">Playa</ItemLink>
+                    </ListItem>
+                    <ListItem>
+                        <ItemLink to="/lingerie">Lencería</ItemLink>
+                    </ListItem>
+                    <ListItem>
+                        <ItemLink to="/accessories">Accesorios</ItemLink>
+                    </ListItem>
                     <ListItem>Accessories</ListItem>
                     <ListItem>My Account</ListItem>
                     <ListItem>
@@ -29,7 +37,7 @@ const FooterTest = () => {
                     </ListItem>
                     <ListItem>Wishlist</ListItem>
                     <ListItem>Wishlist</ListItem>
-                    <ListItem>Terms</ListItem>
+                    <ListItem>Términos y condiciones</ListItem>
                 </List>
             </Center>
             <Right>
