@@ -28,7 +28,6 @@ ReactDOM.render(
         </Routes>
       </ScrollToTop>
     </BrowserRouter>
-
   </React.StrictMode>,
   document.getElementById('root')
 );

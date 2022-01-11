@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
     flex: 1;
@@ -28,6 +29,11 @@ export const Info = styled.div`
 export const Title = styled.h1`
     color: white;
     margin-bottom: 20px;
+`;
+
+export const ButtonLink = styled(Link)`
+    color: white;
+    text-decoration: none;
 `;
 
 export const Button = styled.button`

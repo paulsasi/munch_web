@@ -1,4 +1,4 @@
-import {Container, Image, Info, Title, Button} from './categoryItem-styling';
+import {Container, Image, Info, Title, ButtonLink, Button} from './categoryItem-styling';
 
 const CategoryItem = ({item}) => {
 
@@ -8,7 +8,9 @@ const CategoryItem = ({item}) => {
             <Image src={require(`../${item.img}`)}/>
             <Info>
                 <Title>{item.title}</Title>
-                <Button>SHOP NOW</Button>
+                <ButtonLink to={item.path}>
+                    <Button>SHOP NOW</Button>
+                </ButtonLink>
             </Info>
         </Container>
     )
