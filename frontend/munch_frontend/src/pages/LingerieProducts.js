@@ -12,12 +12,14 @@ const LingerieProducts = () => {
         path: "< Lingerie"
     }
 
+    const productFilter = {"type" : "lingerie"};
+
     return (
         <div>
             <Announcement />
             <Navbar />
             <Header content={content}/>
-            <ProductList />
+            <ProductList args={productFilter}/>
             <FooterTest />
         </div>
     )

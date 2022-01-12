@@ -12,12 +12,14 @@ const BeachProducts = () => {
         path: "< Beach"
     }
 
+    const productFilter = {"type" : "beach"};
+
     return (
         <div>
             <Announcement />
             <Navbar />
             <Header content={content}/>
-            <ProductList />
+            <ProductList args={productFilter}/>
             <FooterTest />
         </div>
     )

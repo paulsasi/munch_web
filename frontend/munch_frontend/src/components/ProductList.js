@@ -1,12 +1,28 @@
+import React, {useState, useEffect} from "react";
 import { Container, ProductContainer, FilterContainer, Filter, FilterText, Select, Option} from "./productList-styling";
 import {popularProducts} from "../data/popularProducts";
 import Product from "./Product";
 
-const ProductList = () => {
+import fetchInventory from "../api/fetchInventory";
 
-    const renderProducts = popularProducts.map((item) => {
+const ProductList = (args) => {
+
+    const [inventory, setInventory] = useState([]);
+
+    useEffect(() => {
+        const getInventory = async (args) => {
+            const inv = await fetchInventory(args);
+
+            setInventory(inv);
+        }
+
+        getInventory(args);
+
+    }, []);
+
+    const renderProducts = inventory.map((item) => {
         return (
-            <Product item={item} key={item.id} />
+            <Product item={item}/>
         )
     });
 
