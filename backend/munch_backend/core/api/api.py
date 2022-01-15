@@ -51,8 +51,6 @@ def image_api_view(request, name: str):
     if request.method == 'GET':
 
         img_path = STATICFILES_DIRS[0] / name
-        print('ggggg')
-        print(img_path)
 
         if not isfile(img_path):
             return Response('Image not found', status=status.HTTP_400_BAD_REQUEST)

@@ -37,11 +37,29 @@ export const Image = styled.img`
 
 export const InfoContainer = styled.div`
     flex: 1;
-    background-color: blue;
     height: 100%;
     width: 81%;
 `;
 
+export const RowInfo = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+`;
+
 export const Title = styled.h3`
-    margin: 0px 30px;;
+    margin: 0px 5px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+`;
+
+export const Colors = styled.div`
+    margin-left: 5px;
+    display: flex;
+`;
+
+export const ColorName = styled.p`
+    font-size: 10px;
+    margin: 0px 5px;
 `;
