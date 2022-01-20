@@ -1,29 +1,29 @@
 import React from 'react';
 import styled from 'styled-components';
 import {AiOutlineShoppingCart} from 'react-icons/ai';
-import './Navbar.css';
+import {Container, Wrapper, Left, Language, Center, Right, Logo, MenuItem} from './navbar-styling';
 
 
 function Navbar() {
     return (
 
-    <div className='navbar-container' >
-        <div className='navbar-wrapper'>
-            <div className='navbar-left'>
-                <div className='navbar-language'>ES</div>
-            </div>
-            <div className='navbar-center'>
-                <div className='navbar-logo'>MÜNCH</div>
-            </div>
-            <div className='navbar-right'>
-                <div className='navbar-menu-item'>REGISTER</div>
-                <div className='navbar-menu-item'>SIGN IN</div>
-                <div className='navbar-menu-item'>
+    <Container>
+        <Wrapper>
+            <Left>
+                <Language>ES</Language>
+            </Left>
+            <Center>
+                <Logo>MÜNCH</Logo>
+            </Center>
+            <Right>
+                <MenuItem>REGISTER</MenuItem>
+                <MenuItem>SIGN IN</MenuItem>
+                <MenuItem>
                     <AiOutlineShoppingCart />
-                </div>
-            </div>
-        </div>
-    </div>
+                </MenuItem>
+            </Right>
+        </Wrapper>
+    </Container>
     );
 }
 

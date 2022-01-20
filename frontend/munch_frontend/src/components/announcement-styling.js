@@ -1,4 +1,6 @@
-.announcement-container{
+import styled from "styled-components";
+
+export const Container = styled.div`
     height: 20px;
     background-color: teal;
     color: white;
@@ -7,4 +9,4 @@
     justify-content: center;
     font-size: 14px;
     font-weight: 500;
-}
+`;

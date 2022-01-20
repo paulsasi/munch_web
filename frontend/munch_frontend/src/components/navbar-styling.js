@@ -1,41 +1,43 @@
-.navbar-container {
-    height: 50px;
-}
+import styled from "styled-components";
 
-.navbar-wrapper {
+export const Container = styled.div`
+    height: 50px;
+`;
+
+export const Wrapper = styled.div`
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
-}
+`;
 
-.navbar-left {
+export const Left = styled.div`
     flex: 1;
-}
+`;
 
-.navbar-language {
+export const Language = styled.div`
     font-size: 10px;
     cursor: pointer;
-}
+`;
 
-.navbar-center {
+export const Center = styled.div`
     flex:1;
     text-align: center;
-}
+`;
 
-.navbar-right {
+export const Right = styled.div`
     flex:1;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-}
+`;
 
-.navbar-logo {
+export const Logo = styled.div`
     font-size: 18px;
     font-weight: bold;
-}
+`;
 
-.navbar-menu-item {
+export const MenuItem = styled.div`
     font-size: 10px;
     cursor: pointer;
     margin-left: 25px;
-}
+`;

@@ -1,10 +1,10 @@
-import './Announcement.css';
+import {Container} from './announcement-styling';
 
 const Announcement = () => {
     return (
-        <div className='announcement-container'>
+        <Container>
             Super Deal! Free Shippinh!!
-        </div>
+        </Container>
     )
 }
 

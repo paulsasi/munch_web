@@ -1,0 +1,127 @@
+{ "inventory": [
+    {
+        "name": "Nea",
+        "reference": "A0000000001",
+        "brand": "Eres",
+        "type": "Beach",
+        "subtype": "Thin panties",
+        "color": [
+            ["Noir", 11, 11, 11],
+            ["Cosmetic H16", 237, 188, 144],
+            ["Pierre Bleue", 58, 63, 141],
+            ["Smoke", 80, 81, 91]
+        ],
+        "size": ["Eres - 38", "Eres - 40", "Eres - 42"],
+        "price": "105",
+        "material": ["Polyamide", "Elastane"],
+        "form": "",
+        "release_date": "",
+        "images": ["A0000000001.png", "A0000000001_1.png", "A0000000001_2.png"]
+    },
+    {
+        "name": "Clac",
+        "reference": "A0000000002",
+        "brand": "Eres",
+        "type": "Beach",
+        "subtype": "Classic Panties",
+        "color": [
+            ["Waterproof", 11, 11, 11],
+            ["Logo", 220, 54, 17],
+            ["Indie", 238, 125, 4],
+            ["Wax", 40, 102, 225],
+            ["Mer Emeraude", 37, 198, 105]
+        ],
+        "size": ["Eres - 38", "Eres - 40", "Eres - 42", "Eres - 44"],
+        "price": "136",
+        "material": ["Polyamide", "Elastane"],
+        "form": "",
+        "release_date": "",
+        "images": ["A0000000002.png", "A0000000002_1.png"]
+    },
+    {
+        "name": "Espadrille",
+        "reference": "A0000000003",
+        "brand": "Eres",
+        "type": "Beach",
+        "subtype": "Bra",
+        "color": [
+            ["Noir", 11, 11, 11]
+        ],
+        "size": ["Eres - 38", "Eres - 40"],
+        "price": "215",
+        "material": ["Polyamide", "Elastane"],
+        "form": "",
+        "release_date": "",
+        "images": ["A0000000003.png", "A0000000003_1.png"]
+    },
+    {
+        "name": "Matelot",
+        "reference": "A0000000004",
+        "brand": "Eres",
+        "type": "Beach",
+        "subtype": "Small Triangle",
+        "color": [
+            ["Silk E21", 233, 234, 234]
+        ],
+        "size": ["Eres - 38", "Eres - 40", "Eres - 42", "Eres - 44"],
+        "price": "165",
+        "material": ["Polyamide", "Elastane"],
+        "form": "",
+        "release_date": "",
+        "images": ["A0000000004.png", "A0000000004_1.png"]
+    },
+    {
+        "name": "Mouna",
+        "reference": "A0000000005",
+        "brand": "Eres",
+        "type": "Beach",
+        "subtype": "Small Triangle",
+        "color": [
+            ["Blanc", 255, 255, 255],
+            ["Noir", 11, 11, 11],
+            ["Paillettes", 213, 229, 13],
+            ["Glassy", 158, 97, 4],
+            ["Dress", 214, 28, 197],
+            ["Indie", 238, 125, 4]
+        ],
+        "size": ["Eres - 38", "Eres - 40", "Eres - 42", "Eres - 44"],
+        "price": "115",
+        "material": ["Polyamide", "Elastane"],
+        "form": "",
+        "release_date": "",
+        "images": ["A0000000005.png", "A0000000005_1.png"]
+    },
+    {
+        "name": "Fair-play",
+        "reference": "A0000000006",
+        "brand": "Eres",
+        "type": "Beach",
+        "subtype": "Sophisticated Swimsuit",
+        "color": [
+            ["Noir", 11, 11, 11],
+            ["Caviar", 11, 11, 11]
+        ],
+        "size": ["Eres - 38", "Eres - 40", "Eres - 42", "Eres - 44"],
+        "price": "355",
+        "material": ["Polyamide", "Elastane", "Polyester"],
+        "form": "",
+        "release_date": "",
+        "images": ["A0000000006.png", "A0000000006_1.png"]
+    },
+    {
+        "name": "Marinière",
+        "reference": "A0000000007",
+        "brand": "Eres",
+        "type": "Beach",
+        "subtype": "Sophisticated Swimsuit",
+        "color": [
+            ["Noir", 11, 11, 11]
+        ],
+        "size": ["Eres - 38", "Eres - 42", "Eres - 44"],
+        "price": "405",
+        "material": ["Polyamide", "Elastane", "Polyester"],
+        "form": "",
+        "release_date": "",
+        "images": ["A0000000007.png", "A0000000007_1.png"]
+    }
+]}

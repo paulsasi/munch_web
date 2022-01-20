@@ -26,14 +26,10 @@ const Product = (args) => {
 
     const renderColors = item.color.map((color) => {
 
-        console.log(color);
-
-        const name = (color != undefined) ? color[0] : undefined;
-        const r = (color != undefined) ? color[1] : undefined;
-        const g = (color != undefined) ? color[2] : undefined;
-        const b = (color != undefined) ? color[3] : undefined;
-
-        console.log(name);
+        const name = (color !== undefined) ? color[0] : undefined;
+        const r = (color !== undefined) ? color[1] : undefined;
+        const g = (color !== undefined) ? color[2] : undefined;
+        const b = (color !== undefined) ? color[3] : undefined;
 
         const icon_style = {
             color: 'rgb(' + r + ',' + g +',' + b + ')'
