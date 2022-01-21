@@ -123,5 +123,27 @@
         "form": "",
         "release_date": "",
         "images": ["A0000000007.png", "A0000000007_1.png"]
+    },
+    {
+        "name": "Providence",
+        "reference": "A0000000008",
+        "brand": "Eres",
+        "type": "Lingerie",
+        "subtype": "Triangle bra",
+        "color": [
+            ["Noir", 0, 0, 0],
+            ["Coshmetic H16", 241, 218, 172],
+            ["Pierre Bleue", 49, 69, 185],
+            ["Detox", 33, 183, 46],
+            ["Bouche H20", 245, 61, 35],
+            ["Peau mate", 185, 84, 54],
+            ["Peau de peche", 239, 80, 157]
+        ],
+        "size": ["Eres - 38", "Eres - 42", "Eres - 44"],
+        "price": "405",
+        "material": ["Polyamide", "Elastane", "Polyester"],
+        "form": "",
+        "release_date": "",
+        "images": ["A0000000008.png", "A0000000008_1.png"]
     }
 ]}

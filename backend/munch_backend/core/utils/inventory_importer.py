@@ -7,7 +7,8 @@ import os
 from os.path import abspath, dirname
 from typing import Dict
 import json
-import core.models
+
+from matplotlib.pyplot import connect
 
 """This scripts imports an inventory in json format into the database. The json format must be the following:
     { "inventory": [
@@ -35,6 +36,10 @@ import core.models
 
 DB_PATH = dirname(dirname(abspath(__file__))) + '/db.sqlite3'
 
+class ItemFormatError(Exception):
+    """Raised when an item in the invetory has the wrong format"""
+    pass
+
 def parse_arguments() -> str:
 
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
@@ -59,12 +64,41 @@ def validate_format(data: Dict):
 
     data_items = data.get('inventory')
 
-    for item in data_items:
-        assert list(item.keys()) == ['name', 'reference', 'brand', 'type', 'subtype', 'color',
-            'size', 'price', 'material', 'form', 'release_date', 'images']
+    for index, item in enumerate(data_items):
 
-def import_to_db():
-    print('test')
+        try:
+            assert list(item.keys()) == ['name', 'reference', 'brand', 'type', 'subtype', 'color',
+                'size', 'price', 'material', 'form', 'release_date', 'images']
+
+            assert isinstance(item.get('name'), str)
+            assert isinstance(item.get('reference'), str)
+            assert isinstance(item.get('brand'), str)
+            assert isinstance(item.get('type'), str)
+            assert isinstance(item.get('subtype'), str)
+            assert isinstance(item.get('price'), str)
+            assert isinstance(item.get('form'), str)
+            assert isinstance(item.get('release_date'), str)
+
+            assert isinstance(item.get('color'), list)
+            assert isinstance(item.get('size'), list)
+            assert isinstance(item.get('material'), list)
+            assert isinstance(item.get('images'), list)
+        
+        except AssertionError:
+            raise ItemFormatError(f'Item number {index} has incorrect format.')
+
+def format_list_field(name: str, content: list):
+    content_str = '[' + ','.join('"' + str(e) + '"' for e in content) +']'
+    return f'{{"{name}": {content_str}}}'
+
+
+def import_to_db(data: Dict):
+
+    items = [item for item in data.get('inventory')]
+
+    for item in items:
+    
+        images_field = format_list_field('images', item.get('images'))
 
 
 if __name__ == '__main__':
@@ -79,6 +113,8 @@ if __name__ == '__main__':
 
     n_items  = len(inventory.get('inventory'))
     print(f'Number of items to import: {n_items}')
+
+    import_to_db(inventory)
 
 
 
