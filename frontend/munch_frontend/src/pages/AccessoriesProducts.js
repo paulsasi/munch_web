@@ -12,7 +12,7 @@ const AccessoriesProducts = () => {
         path: "< Accessories"
     }
 
-    const productFilter = {"type" : "accessory"};
+    const productFilter = {"type" : "Accessory"};
 
     return (
         <div>

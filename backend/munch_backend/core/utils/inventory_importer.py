@@ -7,8 +7,8 @@ import os
 from os.path import abspath, dirname
 from typing import Dict
 import json
-
-from matplotlib.pyplot import connect
+# from matplotlib.pyplot import connect
+from core.models import Inventory
 
 """This scripts imports an inventory in json format into the database. The json format must be the following:
     { "inventory": [
@@ -97,8 +97,27 @@ def import_to_db(data: Dict):
     items = [item for item in data.get('inventory')]
 
     for item in items:
-    
-        images_field = format_list_field('images', item.get('images'))
+
+        name = item.get('name')
+        reference = item.get('reference')
+        brand = item.get('brand')
+        price = item.get('price')
+        type = item.get('type')
+        subtype = item.get('subtype')
+        price = item.get('price')
+        form = item.get('form')
+        release_date = item.get('release_date')
+
+        color = format_list_field('color', item.get('color'))
+        size = format_list_field('size', item.get('size'))
+        material = format_list_field('material', item.get('material'))
+        images = format_list_field('images', item.get('images'))
+
+        row = Inventory(name=name, reference=reference, brand=brand, type=type, subtype=subtype,
+            color=color, size=size, price=price, material=material, form=form, release_date=release_date,
+            images=images)
+
+        row.save()
 
 
 if __name__ == '__main__':

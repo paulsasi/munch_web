@@ -12,7 +12,7 @@ const LingerieProducts = () => {
         path: "< Lingerie"
     }
 
-    const productFilter = {"type" : "lingerie"};
+    const productFilter = {"type" : "Lingerie"};
 
     return (
         <div>

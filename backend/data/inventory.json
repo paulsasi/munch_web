@@ -92,23 +92,6 @@
         "images": ["A0000000005.png", "A0000000005_1.png"]
     },
     {
-        "name": "Fair-play",
-        "reference": "A0000000006",
-        "brand": "Eres",
-        "type": "Beach",
-        "subtype": "Sophisticated Swimsuit",
-        "color": [
-            ["Noir", 11, 11, 11],
-            ["Caviar", 11, 11, 11]
-        ],
-        "size": ["Eres - 38", "Eres - 40", "Eres - 42", "Eres - 44"],
-        "price": "355",
-        "material": ["Polyamide", "Elastane", "Polyester"],
-        "form": "",
-        "release_date": "",
-        "images": ["A0000000006.png", "A0000000006_1.png"]
-    },
-    {
         "name": "Marinière",
         "reference": "A0000000007",
         "brand": "Eres",
