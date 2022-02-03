@@ -98,6 +98,10 @@ def format_list_field(name: str, content: list):
     content_str = '[' + ','.join('"' + str(e) + '"' for e in content) +']'
     return f'{{"{name}": {content_str}}}'
 
+def format_color_field(name: str, content: list):
+    content_str = '[' + ','.join(str(e).replace("'", '"') for e in content) + ']'
+    return f'{{"{name}": {content_str}}}'
+
 
 def import_to_db(data: Dict):
 
@@ -115,7 +119,7 @@ def import_to_db(data: Dict):
         form = item.get('form')
         release_date = item.get('release_date') if item.get('release_date') else None
 
-        color = format_list_field('color', item.get('color'))
+        color = format_color_field('color', item.get('color'))
         size = format_list_field('size', item.get('size'))
         material = format_list_field('material', item.get('material'))
         images = format_list_field('images', item.get('images'))

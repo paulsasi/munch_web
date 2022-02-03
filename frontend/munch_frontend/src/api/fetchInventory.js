@@ -34,7 +34,9 @@ const fetchInventory = async (props) => {
             formatted_item.brand = item.brand;
             formatted_item.type = item.type;
             formatted_item.subtype = item.subtype;
+            console.log(item.color);
             formatted_item.color = JSON.parse(item.color).color;
+            console.log(formatted_item.color);
             formatted_item.size = JSON.parse(item.size).size;
             formatted_item.price = item.price;
             formatted_item.material = JSON.parse(item.material).material;
