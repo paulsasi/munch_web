@@ -1,24 +1,3 @@
-# TODO: COmentar el esquema del jso
-
-# TODO : Hacer unique la columna reference
-
-import argparse
-import os
-from os.path import abspath, dirname
-from typing import Dict
-import json
-import django
-import os,sys,inspect
-
-current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-parent_dir = os.path.dirname(current_dir)
-sys.path.insert(0, parent_dir) 
-
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "munch_backend.settings")
-django.setup()
-
-from core.models import Inventory
-
 """This scripts imports an inventory in json format into the database. The json format must be the following:
     { "inventory": [
         {
@@ -42,6 +21,25 @@ from core.models import Inventory
         }, ...
     ]}
 """
+
+
+import argparse
+import os
+from os.path import abspath, dirname
+from typing import Dict
+import json
+import django
+import os,sys,inspect
+
+current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parent_dir = os.path.dirname(current_dir)
+sys.path.insert(0, parent_dir) 
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "munch_backend.settings")
+django.setup()
+
+from core.models import Inventory
+
 
 DB_PATH = dirname(dirname(abspath(__file__))) + '/db.sqlite3'
 
