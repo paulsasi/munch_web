@@ -3,15 +3,15 @@ import FooterTest from "../components/FooterTest";
 import Navbar from "../components/Navbar";
 import SingleProduct from "../components/SingleProduct";
 
-const Product = () => {
+const ProductPage = (args) => {
     return (
         <div>
             <Announcement />
             <Navbar />
-            <SingleProduct />
+            <SingleProduct args={args}/>
             <FooterTest />
         </div>
     )
 }
 
-export default Product;
+export default ProductPage;

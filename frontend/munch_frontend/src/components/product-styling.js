@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
     flex: 1;
@@ -27,8 +28,11 @@ export const ImgContainer = styled.div`
     justify-content: center;
 `;
 
+export const ImageLink = styled(Link)`
+`;
+
 export const Image = styled.img`
-    width: 90%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: 2;
@@ -38,7 +42,7 @@ export const Image = styled.img`
 export const InfoContainer = styled.div`
     flex: 1;
     height: 100%;
-    width: 81%;
+    width: 100%;
 `;
 
 export const RowInfo = styled.div`
@@ -53,6 +57,14 @@ export const Title = styled.h3`
     font-weight: 500;
     letter-spacing: 2px;
 `;
+export const TitleLink = styled(Link)`
+    color: black;
+    text-decoration: none;
+    margin: 0px 5px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    `;
 
 export const Colors = styled.div`
     margin-left: 5px;

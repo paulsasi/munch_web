@@ -1,7 +1,12 @@
 import {Container, ImgContainer, Image, InfoContainer, Title, Description, Price, FilterContainer, Filter, FilterTitle, FilterColor, FilterSize, FilterSizeOption} from './singleProduct-styling';
+import { useParams } from 'react-router-dom';
 
+const SingleProduct = (args) => {
 
-const SingleProduct = () => {
+    const { id } = useParams();
+
+    console.log('LOOOOL');
+    console.log(id);
     return (
         <Container>
             <ImgContainer>

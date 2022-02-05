@@ -1,4 +1,4 @@
-import { Container, ImgContainer, Image, InfoContainer, RowInfo, Title, Colors, ColorName} from "./product-styling";
+import { Container, ImgContainer, ImageLink, Image, InfoContainer, RowInfo, Title, TitleLink, Colors, ColorName} from "./product-styling";
 import React, {useState, useEffect} from "react";
 import fetchImage from "../api/fetchImage";
 import {BsCircleFill} from 'react-icons/bs';
@@ -7,6 +7,8 @@ import {BsCircleFill} from 'react-icons/bs';
 const Product = (args) => {
 
     const item = args.item;
+
+    const id = item.reference;
 
     const [imageb64, setImageb64] = useState('');
 
@@ -43,11 +45,15 @@ const Product = (args) => {
     return (
         <Container>
             <ImgContainer>
-                <Image src = {imageb64}/>
+                <ImageLink to={'/product/' + id}>
+                    <Image src = {imageb64}/>
+                </ImageLink>
             </ImgContainer>
             <InfoContainer>
                 <RowInfo>
-                    <Title>{item.name}</Title>
+
+                    <TitleLink to={'/product/' + id}>{item.name}</TitleLink>
+
                     <Title>{item.price}€</Title>
                 </RowInfo>
                 <Colors>

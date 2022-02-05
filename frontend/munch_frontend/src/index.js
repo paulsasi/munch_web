@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 import Home from './pages/Home';
-import Product from './pages/Product';
+import ProductPage from './pages/ProductPage';
 import BeachProducts from './pages/BeachProducts';
 import LingerieProducts from './pages/LingerieProducts';
 import AccessoriesProducts from './pages/AccessoriesProducts';
@@ -23,7 +23,7 @@ ReactDOM.render(
           <Route exact path='/lingerie' element={<LingerieProducts/>} />
           <Route exact path='/accessories' element={<AccessoriesProducts/>} />
           <Route exact path='/about-us' element={<AboutUs/>} />
-          <Route exact path='/product' element={<Product />} />
+          <Route exact path='/product/:id' element={<ProductPage />} />
         </Routes>
       </ScrollToTop>
     </BrowserRouter>
